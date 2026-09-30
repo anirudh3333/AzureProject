@@ -5,6 +5,8 @@
 			{
 				"name": "Azure_SQL_Lake",
 				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -62,7 +64,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "databrickse2esa",
-							"folder": "azureprohect/bronze/cdc/",
+							"folder": "azureproject/bronze/cdc/",
 							"file": "cdc.json"
 						}
 					}
