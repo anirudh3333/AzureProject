@@ -1,0 +1,15 @@
+{
+	"name": "factoryAzureProjectAnizz",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c5e08f8f-09f8-46b9-b81f-d4b55a0fce5a",
+		"tenantId": "5356af5f-de77-4482-884c-697298187089"
+	}
+}
