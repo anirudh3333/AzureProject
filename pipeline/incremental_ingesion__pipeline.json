@@ -109,7 +109,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "azureproject",
-							"folder": "bronze/cdc",
+							"folder": {
+								"value": "bronze/@{pipeline().parameters.table}CDC",
+								"type": "Expression"
+							},
 							"file": "cdc.json"
 						}
 					},
@@ -272,7 +275,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "azureproject",
-										"folder": "bronze/cdc",
+										"folder": "bronze/@{pipeline().parameters.table}CDC",
 										"file": "empty.json"
 									}
 								}
@@ -283,7 +286,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "azureproject",
-										"folder": "bronze/cdc",
+										"folder": "bronze/@{pipeline().parameters.table}CDC",
 										"file": "cdc.json"
 									}
 								}
